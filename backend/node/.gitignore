@@ -1,0 +1,4 @@
+# Server credentials and deployment-specific settings
+.env
+.env.*
+!.env.example

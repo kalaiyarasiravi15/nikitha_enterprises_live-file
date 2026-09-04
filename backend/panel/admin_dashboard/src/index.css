@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --thm-font: 'Poppins', sans-serif;
+  --thm-font-2: 'Josefin Sans', sans-serif;
+  --thm-primary-color: #2d5a1b;
+  --thm-primary-color-rgb: 45, 90, 27;
+  --thm-secondary-color: #FFCC00;
+  --thm-secondary-color-rgb: 255, 204, 0;
+  --thm-body-font-color: #4b5563;
+  --thm-body-font-size: 16px;
+  --thm-body-font-weight: 400;
+  --thm-body-line-height: 30px;
+  --thm-heading-font-color: #111827;
+  --thm-white: #ffffff;
+  --thm-black: #111827;
+  --thm-gray-bg: #f8fafc;
+  --thm-black-bg: #111827;
+  --thm-border-color: #e5e7eb;
+  --thm-border-rgb-color: 17, 24, 39;
+  --thm-border-radius: 10px;
+
+  --bg-main: #faf6f0;
+  --sidebar-deep: #ffffff;
+  --sidebar-teal: #ffffff;
+  --accent-gold: #FFCC00;
+  --accent-teal: #2d5a1b;
+  --accent-teal-light: #7e1c4f;
+  --text-dark: #111827;
+  --text-muted: #6b7280;
+  --white: #ffffff;
+  --border: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--thm-font);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+.invalid-input {
+  border: 1.5px solid #ef4444 !important;
+  background-color: #fff8f8 !important;
+}
+.error-msg {
+  color: #dc2626 !important;
+  background-color: #fecaca !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+  font-size: 13px !important;
+  margin-top: 6px !important;
+  display: inline-block !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+}
+
+
+/* Global Table Border Styles for Admin Panel */
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 8px !important;
+  border: 1px solid #dee2e6 !important;
+  overflow: hidden !important;
+}
+table th, table td {
+  border-bottom: 1px solid #dee2e6 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+table th:last-child, table td:last-child {
+  border-right: none !important;
+}
+table tbody tr:last-child td {
+  border-bottom: none !important;
+}
+table thead th {
+  background-color: #f1f3f5 !important;
+  border-bottom: 2px solid #dee2e6 !important;
+}

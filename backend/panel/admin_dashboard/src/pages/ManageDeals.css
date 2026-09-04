@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@400;600;700&display=swap');
+
+.dd-wrap {
+    font-family: 'Poppins', sans-serif;
+    padding: 28px 32px;
+    background: #F5F6FA;
+    color: #2d5a1b;
+    min-height: 100vh;
+}
+
+.dd-header { margin-bottom: 28px; display: flex; align-items: center; }
+.dd-header h2 {
+    
+    font-size: 26px;
+    color: #2d5a1b;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dd-section-card {
+    background: #fff;
+    border: 1px solid rgba(45, 90, 27, 0.08);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.dd-section-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #d4af37;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.dd-form-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .dd-form-grid { grid-template-columns: 1fr; }
+}
+
+.dd-input-group { margin-bottom: 18px; display: flex; flex-direction: column; gap: 6px; }
+.dd-input-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #6a6460;
+    font-weight: 600;
+}
+
+.dd-input, .dd-textarea {
+    background: #F5F6FA;
+    border: 1px solid rgba(45, 90, 27, 0.08);
+    color: #2d5a1b;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.dd-input:focus { border-color: #d4af37; }
+.dd-textarea { min-height: 80px; resize: vertical; }
+
+.dd-input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.dd-btn-save {
+    background: #d4af37;
+    color: #0a0a0a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.dd-btn-save:hover { background: #e8c84a; }
+
+.dd-table-wrapper { border: 1px solid rgba(45, 90, 27, 0.08); border-radius: 8px; overflow: hidden; }
+.dd-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.dd-table th { background: #F5F6FA; padding: 12px; text-align: left; color: #9aabcc; font-size: 10px; text-transform: uppercase; }
+.dd-table td { padding: 14px 12px; border-bottom: 1px solid #F5F6FA; }
+
+.dd-preview-title { display: block; color: #2d5a1b; font-weight: 600; margin-bottom: 4px; }
+.dd-status-live {
+    background: rgba(92,184,142,0.1);
+    color: #5cb88e;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.dd-preview-time { color: #d4af37; font-size: 12px; }
+
+.dd-del-btn {
+    background: none;
+    border: 1px solid rgba(45, 90, 27, 0.08);
+    color: #e05c5c;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dd-del-btn:hover { background: rgba(224,92,92,0.1); border-color: #e05c5c; }
+
+.dd-wrap {
+    font-family: 'Poppins', sans-serif;
+    padding: 28px 32px;
+    background: #F5F6FA;
+    color: #2d5a1b;
+    min-height: 100vh;
+}
+
+.dd-header { 
+    margin-bottom: 28px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.dd-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #2d5a1b;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dd-section-card {
+    background: #fff;
+    border: 1px solid rgba(45, 90, 27, 0.08);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.dd-section-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: #d4af37;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.dd-form-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+}
+
+.dd-input-group { 
+    margin-bottom: 18px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+}
+
+.dd-input-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #6a6460;
+    font-weight: 600;
+}
+
+.dd-input, .dd-textarea {
+    background: #F5F6FA;
+    border: 1px solid rgba(45, 90, 27, 0.08);
+    color: #2d5a1b;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.dd-input:focus, .dd-textarea:focus { 
+    border-color: #d4af37; 
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2);
+}
+
+.dd-textarea { 
+    min-height: 100px; 
+    resize: vertical; 
+}
+
+.dd-input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.dd-file-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.dd-file-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F5F6FA;
+    border: 1px dashed #333;
+    padding: 11px 15px;
+    border-radius: 8px;
+    color: #9aabcc;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dd-file-label:hover {
+    border-color: #d4af37;
+    color: #d4af37;
+    background: rgba(212, 175, 55, 0.02);
+}
+
+.dd-file-label svg {
+    font-size: 18px;
+    color: #d4af37;
+}
+
+.dd-btn-save {
+    background: #d4af37;
+    color: #0a0a0a;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dd-btn-save:hover { 
+    background: #fff; 
+    transform: translateY(-2px);
+}
+
+.dd-btn-save:disabled {
+    background: #e4e8f8;
+    color: #9aabcc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.dd-table-wrapper { 
+    border: 1px solid rgba(45, 90, 27, 0.08); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.dd-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-size: 13px; 
+}
+
+.dd-table th { 
+    background: #F5F6FA; 
+    padding: 12px; 
+    text-align: left; 
+    color: #9aabcc; 
+    font-size: 10px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+.dd-table td { 
+    padding: 14px 12px; 
+    border-bottom: 1px solid #F5F6FA; 
+    vertical-align: middle;
+}
+
+.dd-mini-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid rgba(45, 90, 27, 0.08);
+    background: #eef0fb;
+}
+
+.dd-preview-title { 
+    display: block; 
+    color: #2d5a1b;
+    font-weight: 600; 
+    margin-bottom: 4px; 
+}
+
+.dd-status-live {
+    background: rgba(92, 184, 142, 0.1);
+    color: #5cb88e;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.dd-preview-time { 
+    color: #d4af37; 
+    font-size: 12px; 
+    font-family: monospace;
+}
+
+.dd-del-btn {
+    background: rgba(224, 92, 92, 0.05);
+    border: 1px solid rgba(224, 92, 92, 0.1);
+    color: #e05c5c;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dd-del-btn:hover { 
+    background: #e05c5c; 
+    color: #fff; 
+    border-color: #e05c5c;
+}
+
+.dd-actions-cell {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dd-edit-btn {
+  background: rgba(45, 90, 27, 0.08); 
+  color: var(--thm-primary-color);
+  border: 1px solid rgba(45, 90, 27, 0.2);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.dd-edit-btn:hover {
+  background: var(--thm-primary-color);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(45, 90, 27, 0.25);
+  transform: translateY(-2px);
+}
+
+.dd-edit-btn:active {
+  transform: translateY(0);
+}
+
+.dd-btn-save.update-mode {
+  background: linear-gradient(135deg, #f39c12, #e67e22); 
+  border: none;
+}
+
+.dd-cancel-btn {
+  background: transparent;
+  color: #95a5a6;
+  border: 1px solid #95a5a6;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.dd-cancel-btn:hover {
+  background: rgba(149, 165, 166, 0.1);
+  color: #7f8c8d;
+}
+.dd-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 4, 74, 0.45);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: dd-fade-in 0.15s ease;
+}
+
+@keyframes dd-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.dd-confirm-box {
+  background: #ffffff;
+  border: 1px solid rgba(45, 90, 27, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px 24px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 16px 48px rgba(0, 4, 74, 0.18);
+  animation: dd-slide-up 0.2s ease;
+}
+
+@keyframes dd-slide-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.dd-confirm-icon {
+  font-size: 38px;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.dd-confirm-msg {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14.5px;
+  color: #2d5a1b;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.dd-confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dd-confirm-cancel {
+  flex: 1;
+  background: #F5F6FA;
+  border: 1px solid rgba(45, 90, 27, 0.08);
+  color: #6a6460;
+  padding: 10px 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.dd-confirm-cancel:hover {
+  border-color: #9aabcc;
+  color: #2d5a1b;
+}
+
+.dd-confirm-ok {
+  flex: 1;
+  background: #e05c5c;
+  border: none;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  transition: background 0.15s;
+}
+.dd-confirm-ok:hover { background: #c94040; }
+
+.dd-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.dd-card-header .dd-section-label { margin-bottom: 0; }
+
+@media (max-width: 1024px) {
+    .dd-form-grid { grid-template-columns: 1fr; }
+    .dd-wrap { padding: 20px; }
+}
+
+@media (max-width: 600px) {
+    .dd-input-row { grid-template-columns: 1fr; }
+}

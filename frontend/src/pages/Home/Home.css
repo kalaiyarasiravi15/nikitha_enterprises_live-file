@@ -1,0 +1,126 @@
+.home-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ════ DESKTOP: Two-column (main | sidebar) ════ */
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 430px;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+  padding: 0 28px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.home-main {
+  min-width: 0;
+  background: #ffffff;
+  padding-bottom: 0;
+}
+
+.home-sidebar {
+  background: transparent;
+  width: 100%;
+  align-self: start;
+  padding: 16px 0 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-bottom-features-strip {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1300px) {
+  .home-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 12px;
+  }
+  .home-sidebar {
+    width: 320px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .home-layout {
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 12px;
+  }
+  .home-sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-layout {
+    padding: 0 22px;
+  }
+}
+
+@media (max-width: 912px) {
+  .home-layout {
+    padding: 0 18px;
+  }
+  .home-sidebar {
+    width: 100%;
+  }
+}
+
+/* ════ MOBILE RESPONSIVE RULES ════ */
+.mobile-only-bottom-section {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktop-only-sidebar,
+  .desktop-only-features {
+    display: none !important;
+  }
+
+  .mobile-only-bottom-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 16px;
+  }
+
+  .home-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .home-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .home-sidebar.mobile-end-sidebar {
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-sidebar.mobile-end-sidebar {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-sidebar.mobile-end-sidebar {
+    padding: 0 8px;
+  }
+}

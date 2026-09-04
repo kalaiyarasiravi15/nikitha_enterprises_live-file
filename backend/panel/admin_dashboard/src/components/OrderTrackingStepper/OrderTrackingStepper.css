@@ -1,0 +1,310 @@
+.ots-container {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  margin-top: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 1. Header */
+.ots-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.ots-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ecfdf5;
+  color: #15803d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #bbf7d0;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.ots-pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: #16a34a;
+  border-radius: 50%;
+  animation: otsPulse 1.6s infinite ease-in-out;
+}
+
+@keyframes otsPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(22, 163, 74, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+}
+
+.ots-headline {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ots-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #4b5563;
+  flex-wrap: wrap;
+}
+
+.ots-awb-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.ots-copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+  color: #6b7280;
+  transition: color 0.15s ease;
+}
+
+.ots-copy-btn:hover {
+  color: #2d5a1b;
+}
+
+.ots-official-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0fdf4;
+  color: #2d5a1b;
+  border: 1px solid #bbf7d0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.ots-official-link-btn:hover {
+  background: #2d5a1b;
+  color: #ffffff;
+  border-color: #2d5a1b;
+}
+
+/* 2. Flipkart / Amazon Style 5-Stage Stepper Bar */
+.ots-stepper-bar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  margin-bottom: 32px;
+  padding: 10px 0;
+}
+
+.ots-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.ots-connector {
+  position: absolute;
+  top: 20px;
+  right: 50%;
+  width: 100%;
+  height: 4px;
+  background: #e5e7eb;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.ots-connector.is-filled {
+  background: #2d5a1b;
+}
+
+.ots-step-node {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ots-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #cbd5e1;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.ots-step.is-done .ots-icon-circle {
+  background: #2d5a1b;
+  border-color: #2d5a1b;
+  color: #ffffff;
+}
+
+.ots-step.is-current .ots-icon-circle {
+  background: #ffffff;
+  border-color: #2d5a1b;
+  color: #2d5a1b;
+  box-shadow: 0 0 0 4px rgba(45, 90, 27, 0.18);
+  transform: scale(1.1);
+}
+
+.ots-step-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.ots-step.is-done .ots-step-label,
+.ots-step.is-current .ots-step-label {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.ots-step-sub {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.ots-active-tag {
+  color: #2d5a1b;
+  font-weight: 700;
+}
+
+.ots-done-tag {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* 3. Detailed Scan Timeline */
+.ots-timeline-section {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 18px 20px;
+  border: 1px solid #f1f5f9;
+}
+
+.ots-timeline-title {
+  margin: 0 0 14px 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ots-clock-icon {
+  color: #2d5a1b;
+}
+
+.ots-timeline-list {
+  display: grid;
+  gap: 12px;
+}
+
+.ots-timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  position: relative;
+}
+
+.ots-timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #2d5a1b;
+  margin-top: 4px;
+}
+
+.ots-timeline-item:not(:last-child) .ots-timeline-dot::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  width: 2px;
+  height: calc(100% + 2px);
+  background: #cbd5e1;
+}
+
+.ots-timeline-status {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.ots-timeline-meta {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ots-stepper-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-left: 20px;
+  }
+
+  .ots-step {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .ots-connector {
+    right: auto;
+    left: 20px;
+    top: 40px;
+    width: 4px;
+    height: calc(100% + 16px);
+  }
+
+  .ots-step-node {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ots-icon-circle {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,278 @@
+.crp-page { padding: 28px; }
+.crp-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 10px; }
+.crp-header h1 { font-size: 1.6rem; font-weight: 700; color: #1a1a1a; margin: 0; }
+.crp-header-stats { display: flex; gap: 10px; }
+.crp-alert-badge { padding: 6px 14px; background: #fff3cd; color: #856404; border: 1px solid #ffc107; border-radius: 20px; font-size: 0.82rem; font-weight: 700; }
+.crp-refund-badge { padding: 6px 14px; background: #cff4fc; color: #0c5460; border: 1px solid #0dcaf0; border-radius: 20px; font-size: 0.82rem; font-weight: 700; }
+
+.crp-tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.crp-tab { padding: 9px 18px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; border: 2px solid #e0e0e0; background: #fff; cursor: pointer; color: #555; transition: all 0.2s; }
+.crp-tab.active { background: #2d5a1b; color: #fff; border-color: #2d5a1b; }
+
+.crp-filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.crp-filter-btn { padding: 6px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; border: 1.5px solid #e0e0e0; background: #f9f9f9; cursor: pointer; color: #555; transition: all 0.2s; }
+.crp-filter-btn.active { background: #2d5a1b; color: #fff; border-color: #2d5a1b; }
+
+.crp-list { display: flex; flex-direction: column; gap: 14px; }
+.crp-card { background: #fff; border-radius: 12px; padding: 20px; border: 1px solid #e8e0d2; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.crp-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
+.crp-card-left { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.crp-card-right { display: flex; gap: 8px; align-items: center; }
+
+.crp-order-id { font-weight: 800; color: #2d5a1b; font-size: 1rem; }
+.crp-type-badge { padding: 3px 10px; background: #f0f0f0; border-radius: 10px; font-size: 0.78rem; font-weight: 600; color: #333; }
+.crp-status-badge { padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.crp-amount { font-size: 1.1rem; font-weight: 800; color: #1a1a1a; }
+.crp-payment-type { padding: 3px 10px; border-radius: 10px; font-size: 0.78rem; font-weight: 700; }
+.crp-payment-type.online { background: #d1e7dd; color: #0f5132; }
+.crp-payment-type.cod { background: #fff3cd; color: #856404; }
+
+.crp-card-body { margin-bottom: 14px; }
+.crp-info-row { display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.82rem; color: #666; margin-bottom: 10px; }
+.crp-reason { font-size: 0.85rem; color: #333; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; margin-bottom: 8px; }
+.crp-upi-box { padding: 10px 14px; background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-radius: 8px; font-size: 0.85rem; color: #1b5e20; margin-bottom: 8px; border: 1px solid #a5d6a7; }
+
+.crp-images { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+.crp-thumb { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid #e0e0e0; transition: transform 0.2s; }
+.crp-thumb:hover { transform: scale(1.05); border-color: #2d5a1b; }
+
+.crp-actions { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid #f0ebe0; }
+.crp-btn { padding: 9px 18px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; border: none; cursor: pointer; transition: all 0.2s; }
+.crp-btn.approve { background: #d1e7dd; color: #0f5132; }
+.crp-btn.approve:hover { background: #198754; color: #fff; }
+.crp-btn.reject { background: #f8d7da; color: #842029; }
+.crp-btn.reject:hover { background: #dc3545; color: #fff; }
+.crp-btn.received { background: #e2d9f3; color: #432874; }
+.crp-btn.received:hover { background: #6f42c1; color: #fff; }
+.crp-btn.refund { background: #cff4fc; color: #0c5460; }
+.crp-btn.refund:hover { background: #0dcaf0; color: #fff; }
+.crp-btn.complete { background: #d1e7dd; color: #0f5132; }
+.crp-btn.complete:hover { background: #198754; color: #fff; }
+
+.crp-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+.crp-modal-inner { position: relative; max-width: 90vw; max-height: 90vh; }
+.crp-modal-inner img { max-width: 100%; max-height: 80vh; border-radius: 12px; }
+.crp-modal-close { position: absolute; top: -16px; right: -16px; width: 36px; height: 36px; border-radius: 50%; background: #fff; border: none; font-size: 1.1rem; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; }
+
+.crp-loading, .crp-empty { padding: 40px; text-align: center; color: #999; font-size: 0.9rem; }
+
+.crp-pickup-info { padding: 10px 14px; background: #e0f2fe; border-radius: 8px; font-size: 0.85rem; color: #0369a1; margin-bottom: 8px; border: 1px solid #bae6fd; }
+.crp-media-section { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.crp-video-btn { display: inline-flex; align-items: center; padding: 6px 14px; background: #ede9fe; color: #6d28d9; border: 1px solid #ddd6fe; border-radius: 8px; font-size: 0.82rem; font-weight: 700; cursor: pointer; }
+.crp-video-btn:hover { background: #6d28d9; color: #fff; }
+
+.crp-completed-tag { display: inline-flex; align-items: center; gap: 4px; padding: 6px 14px; background: #dcfce7; color: #15803d; border-radius: 8px; font-weight: 700; font-size: 0.82rem; }
+
+/* Pickup Modal */
+.crp-modal-inner { position: relative; width: 100%; max-width: 480px; background: #fff; border-radius: 14px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+.crp-modal-inner h2 { margin: 0 0 4px; font-size: 1.2rem; color: #1e293b; }
+.crp-modal-sub { margin: 0 0 16px; font-size: 0.82rem; color: #64748b; }
+.crp-field-group { margin-bottom: 14px; }
+.crp-field-group label { display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; }
+.crp-input { width: 100%; padding: 10px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 0.9rem; box-sizing: border-box; }
+.crp-modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.crp-btn-cancel { padding: 8px 16px; border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; font-weight: 600; color: #475569; cursor: pointer; }
+.crp-btn-confirm { padding: 8px 18px; border: none; background: #2563eb; color: #fff; border-radius: 6px; font-weight: 700; cursor: pointer; }
+.crp-btn-confirm:disabled { opacity: 0.6; cursor: not-allowed; }
+\n
+/* Table Styles */
+.crp-table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+.crp-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.crp-table th, .crp-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+.crp-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+}
+.crp-table tr:hover {
+  background-color: #f9f9f9;
+}
+.crp-table td small {
+  color: #777;
+}
+
+/* Actions in table */
+.crp-table-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.crp-btn-icon {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.crp-btn-icon.view { color: #0d6efd; background: #e9ecef; }
+.crp-btn-icon.approve { color: #198754; background: #d1e7dd; }
+.crp-btn-icon.reject { color: #dc3545; background: #f8d7da; }
+.crp-btn-icon.received { color: #fd7e14; background: #ffdfc5; }
+.crp-btn-icon.refund { color: #0dcaf0; background: #cff4fc; }
+.crp-btn-icon.complete { color: #6f42c1; background: #e2d9f3; }
+.crp-btn-icon:hover { opacity: 0.8; }
+
+.crp-resolved-tag {
+  font-size: 12px;
+  background: #e9ecef;
+  color: #495057;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Details Modal Specific */
+.details-modal {
+  max-width: 600px;
+}
+.crp-details-content p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+.crp-resolved-banner {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.crp-btn-text { border: none; font-size: 13px; cursor: pointer; padding: 6px 12px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; transition: 0.2s; font-weight: 500; white-space: nowrap; }
+.crp-btn-text.view { color: #0d6efd; background: #e9ecef; }
+.crp-btn-text.approve { color: #198754; background: #d1e7dd; }
+.crp-btn-text.reject { color: #dc3545; background: #f8d7da; }
+.crp-btn-text.received { color: #fd7e14; background: #ffdfc5; }
+.crp-btn-text.refund { color: #0dcaf0; background: #cff4fc; }
+.crp-btn-text.complete { color: #6f42c1; background: #e2d9f3; }
+.crp-btn-text:hover { opacity: 0.8; }
+.crp-table-actions { flex-wrap: wrap; gap: 6px; }
+
+
+/* Sub-Tabs */
+.crp-subtabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+.crp-subtab-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c757d;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.crp-subtab-btn:hover {
+  background: #f8f9fa;
+  color: #495057;
+}
+.crp-subtab-btn.active {
+  background: #212529;
+  color: white;
+}
+
+/* Beautiful Table Borders */
+.crp-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  overflow: hidden;
+}
+.crp-table th, .crp-table td {
+  border-bottom: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+.crp-table th:last-child, .crp-table td:last-child {
+  border-right: none;
+}
+.crp-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.crp-table thead th {
+  background-color: #f1f3f5;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Refund Modal */
+.refund-modal {
+  max-width: 500px;
+}
+.crp-refund-box {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 15px;
+}
+.crp-method-label {
+  font-weight: 600;
+  color: #212529;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.crp-method-desc {
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 10px;
+}
+.crp-upi-copy-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px dashed #ced4da;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.crp-upi-copy-box code {
+  font-size: 15px;
+  color: #d63384;
+  font-weight: 600;
+}
+.crp-copy-btn {
+  background: #e9ecef;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: 0.2s;
+}
+.crp-copy-btn:hover {
+  background: #dee2e6;
+}

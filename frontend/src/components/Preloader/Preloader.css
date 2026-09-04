@@ -1,0 +1,176 @@
+/* ═══════════════════════════════════════════════
+   PRELOADER / SPLASH SCREEN STYLES
+   ═══════════════════════════════════════════════ */
+
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1b3d11 0%, #0d2008 100%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  user-select: none;
+}
+
+.preloader-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  max-width: 520px;
+  width: 90%;
+  animation: preloaderContentScale 0.6s ease-out forwards;
+}
+
+@keyframes preloaderContentScale {
+  from { opacity: 0; transform: scale(0.92) translateY(12px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.preloader-logo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  padding: 16px 28px;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.preloader-logo-pattern {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.preloader-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.15;
+}
+
+.preloader-logo-title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #476C1B;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.preloader-logo-tagline {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  color: #C89438;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.preloader-logo-brand-mark {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #555555;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* ── Welcome Message ── */
+.preloader-welcome-msg {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffcc00;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+  max-width: 440px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  animation: preloaderTextFade 1.2s ease-out forwards;
+}
+
+@keyframes preloaderTextFade {
+  0% { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Progress Bar ── */
+.preloader-progress-bar {
+  width: 220px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.preloader-progress-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f5c542, #ffcc00, #ffffff);
+  border-radius: 10px;
+  animation: preloaderProgressFill 1.6s ease-in-out forwards;
+}
+
+@keyframes preloaderProgressFill {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .preloader-welcome-msg {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+  .preloader-logo-wrap {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+  .preloader-logo-pattern {
+    width: 36px;
+    height: 36px;
+  }
+  .preloader-logo-title {
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+  }
+  .preloader-logo-tagline {
+    font-size: 0.5rem;
+    letter-spacing: 2.5px;
+  }
+  .preloader-logo-brand-mark {
+    font-size: 0.45rem;
+    letter-spacing: 0.8px;
+  }
+}

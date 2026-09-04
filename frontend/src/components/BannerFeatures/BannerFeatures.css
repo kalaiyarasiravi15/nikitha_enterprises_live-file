@@ -1,0 +1,124 @@
+.banner-features-container {
+  width: 100%;
+  margin: 0;
+  padding: 12px 0;
+  position: relative;
+  z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid #f0ede5;
+  overflow: hidden;
+}
+
+.banner-features-track {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  width: max-content;
+  animation: bannerFeaturesMarquee 26s linear infinite;
+  will-change: transform;
+}
+
+.banner-features-container:hover .banner-features-track,
+.banner-features-track:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes bannerFeaturesMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px 16px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.feature-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #2d5a1b;
+  background: #f0f7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d5a1b;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+.feature-text-wrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  text-align: left;
+}
+
+.feature-title {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.feature-subtitle {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.76rem;
+  color: #6b6b6b;
+  margin: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .banner-features-container {
+    padding: 10px 0;
+  }
+  .banner-features-track {
+    gap: 24px;
+    animation-duration: 20s;
+  }
+  .feature-item {
+    gap: 10px;
+    padding: 2px 8px;
+  }
+  .feature-icon-wrap {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+  .feature-title {
+    font-size: 0.84rem;
+  }
+  .feature-subtitle {
+    font-size: 0.70rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-features-track {
+    gap: 18px;
+    animation-duration: 18s;
+  }
+  .feature-icon-wrap {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+  .feature-title {
+    font-size: 0.80rem;
+  }
+  .feature-subtitle {
+    font-size: 0.66rem;
+  }
+}

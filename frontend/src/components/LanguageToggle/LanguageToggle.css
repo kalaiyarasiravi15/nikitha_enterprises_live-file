@@ -1,0 +1,36 @@
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f5f0e8;
+  border-radius: 20px;
+  padding: 3px 8px;
+  border: 1px solid #d4b483;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b6914;
+  padding: 2px 6px;
+  border-radius: 12px;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.lang-btn.active {
+  background: #8b6914;
+  color: #fff;
+}
+
+.lang-btn:hover:not(.active) {
+  color: #5a4309;
+}
+
+.lang-divider {
+  color: #d4b483;
+  font-size: 12px;
+}
