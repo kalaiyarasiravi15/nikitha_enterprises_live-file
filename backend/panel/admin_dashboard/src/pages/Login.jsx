@@ -30,7 +30,7 @@ const Login = () => {
 
         toast.success(' Login successful! Redirecting...', {
           autoClose: 1500,
-          onClose: () => { window.location.href = '#/dashboard'; },
+          onClose: () => { window.location.href = '/dashboard'; },
         });
       }
     } catch (err) {

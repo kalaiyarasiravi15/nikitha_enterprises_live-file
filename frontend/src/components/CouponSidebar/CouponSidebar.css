@@ -20,6 +20,7 @@
   cursor: pointer;
   z-index: 9999;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+ 
 }
 
 .coupon-toggle-btn:hover {
